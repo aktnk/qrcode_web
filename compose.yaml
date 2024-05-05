@@ -1,0 +1,21 @@
+services:
+  qrapp:
+    build:
+      context: ./app
+    container_name: qrapp
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    networks:
+      qrnet:
+  proxy:
+    build:
+      context: ./proxy
+    container_name: proxy
+    ports:
+      - 80:80
+    networks:
+      qrnet:
+networks:
+  qrnet:
+    driver: bridge
