@@ -1,0 +1,14 @@
+[client]
+showErrorDetails = false
+
+[server]
+address = "0.0.0.0"
+baseUrlPath = "qr"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#FF3366"
+backgroundColor = "lightgrey"
+font = "monospace"
